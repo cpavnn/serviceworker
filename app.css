@@ -1,0 +1,9 @@
+body {
+  color:grey;
+}
+.container {
+  padding:20px;
+  background-color: white;
+  box-shadow: 1px 1px 8px 1px grey;
+
+}
