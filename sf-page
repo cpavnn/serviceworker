@@ -1,0 +1,15 @@
+<apex:page showHeader="false" standardStylesheets="false" >
+<script>
+
+   if('serviceWorker' in navigator) {
+          console.log('supports');
+          navigator.serviceWorker.register('/apex/sw', {scope:'/apex/'})
+          .then(function(reg) { console.log('Registration sucessful');})
+          .catch(function(err) {
+              console.log('Error!!',err);
+          });
+          
+      }    
+ </script>
+</apex:page>
+                   
